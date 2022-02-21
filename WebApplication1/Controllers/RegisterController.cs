@@ -11,13 +11,13 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult ProcessLogin(RegisterModel registerModel)
+        public IActionResult ProcessRegister(RegisterModel registerModel)
         {
             SecurityServices securityService = new SecurityServices();
 
             if (securityService.RegisterIsValid(registerModel))
             {
-                return View("Register Success", registerModel);
+                return View("RegisterSuccess", registerModel);
             }
             else
             {
