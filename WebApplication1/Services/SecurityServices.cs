@@ -16,5 +16,10 @@ namespace WebApplication1.Services
             return usersDAO.FindUderByNameAndPassword(user);
 
         }
+
+        public bool RegisterIsValid(RegisterModel register)
+        {
+            return true;
+        }
     }
 }
