@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
 
             if (securityService.RegisterIsValid(registerModel))
             {
-                return View("RegisterSuccess", registerModel);
+                return View("LoginSucess", registerModel);
             }
             else
             {

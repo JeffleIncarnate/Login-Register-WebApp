@@ -1,3 +1,1 @@
-﻿
-
-select * from dbo.Users
+﻿ALTER DATABASE "Test" COLLATE Latin1_General_CS_AS
